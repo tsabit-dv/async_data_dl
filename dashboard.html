@@ -8,7 +8,21 @@
 <body>
   <h1>Selamat datang di Dashboard</h1>
   <p id="welcomeMessage"></p>
+
+  <form id="dataForm">
+    <label for="photo">Unggah Foto:</label>
+    <input type="file" id="photo" accept="image/*" required>
+
+    <label for="keterangan">Keterangan:</label>
+    <input type="text" id="keterangan" required>
+
+    <button type="submit">Simpan Data</button>
+  </form>
+
   <button id="logoutButton">Logout</button>
+
+  <h2>Data yang Tersimpan</h2>
+  <div id="storedData"></div>
 
   <script src="app.js"></script>
 </body>
