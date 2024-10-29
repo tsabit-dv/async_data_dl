@@ -10,11 +10,23 @@
   <p id="welcomeMessage"></p>
 
   <form id="dataForm">
-    <label for="photo">Unggah Foto:</label>
-    <input type="file" id="photo" accept="image/*" required>
+    <!-- Input Foto Before dan Keterangan -->
+    <label for="photoBefore">Unggah Foto Before:</label>
+    <input type="file" id="photoBefore" accept="image/*" required>
 
     <label for="keterangan">Keterangan:</label>
     <input type="text" id="keterangan" required>
+
+    <!-- Input tambahan yang muncul setelah 3 menit -->
+    <div id="additionalInputs" style="display: none;">
+      <label for="photoAfter">Unggah Foto After:</label>
+      <input type="file" id="photoAfter" accept="image/*">
+
+      <label for="catatan">Catatan:</label>
+      <input type="text" id="catatan">
+
+      <button type="button" id="completeButton">Selesai</button>
+    </div>
 
     <button type="submit">Simpan Data</button>
   </form>
